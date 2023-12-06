@@ -605,8 +605,8 @@
                 <div class="half-section">
                     <h2>Project Summary</h2>
                     <p>
-                        Wonder Wings is a 3D flying shooting game. The player controls a plushie, with the goal to defeat all of the enemies in the room, 
-                        mostly toys themselves, without crashing into obstacles.
+                        Wonder Wings is a 3D flying shooting game where toys takes life and start moving around. The player controls Mata a plushie piloting a toy plane. Her goal? 
+                         Defeat the evil wizard SpellHound and all the brainwashed toys that follow him, without crashing her plane into obstacles or falling under enemy fire.
                         <br><br>
                         With this game, we wanted to fill a hole in the market left by the absence of space shooters at the time, but instead of spaceships
                          we ended using toys for artistic constraints. Knowing our new target audience, we pushed for a toony and colorful aesthetic and a 
@@ -625,159 +625,153 @@
             <hr style="width: 85vw; margin: 64px;">
             <div class="game-section">
                 <h2>Major Contributions</h2>
-                <p><span class="highlight">Gameplay Design:</span> crafting functional, immersive and engaging user interfaces for a seamless player experience.</p>
-                <p><span class="highlight">Level Design:</span> responsible for programming and implementing interactive gameplay elements.</p>
-                <p><span class="highlight">System Design:</span> responsible for programming and implementing interactive gameplay elements.</p>
+                <p><span class="highlight">Gameplay Design:</span> designed the player's movement and shooting, and four different type of enemies.</p>
+                <p><span class="highlight">Level Design:</span> designed an open space room for a satisfying flying experience, puzzles with hidden rewards, and positioned the enemies in the level and set their movement.</p>
+                <p><span class="highlight">System Design:</span> responsible for balancing all the stats related to the player, the enemies and their boss.</p>
             </div>
+
             <div class="game-section">
-                <h2>My Contributions</h2>
+                <h2>Gameplay Design</h2>
                 <p>
-                    The journey of this nine-week game project turned out to be as much a test of effective
-                    collaboration as it was about creating
-                    an immersive gaming experence. With a team size much larger than what any of us were used to, we had
-                    to put more focus on efficient
-                    communication and teamwork. It was difficult at times, but we managed to pull together and create a
-                    game I feel proud to have been a part of.
+                    I took care of the majority of the gameplay related mechanics for this project. At the time I was playing the early access version of Everspace 2, so I had an optimal reference for what should have been our space shooter,
+                     but as we adapted our concept to our constraints we used toys instead of spaceships. Consequently the environment went through some changes, it would not be outer space but the inside of a house. For this reason I also 
+                     took inspiration by games such as TOY STORY 2: Buzz Lightyear to the Rescue and Airfix Dogfighter, as they were set in a very similar environment.
+                    </br>
+                    The game core loop would see the player flying around various rooms of a pretty big house (only 1 room in the game demo), exploring it for power-ups and secrets, shooting at the evil toys that make our game enemies, and finally
+                    defeating the room's boss to then go through another house's room. All accompanied by a colorful and light hearted aesthetic and bright visual effects.
                 </p>
-                <h4>User Experience and User Interface Design</h4>
-                <div class="burglar-show">
+
+                <h4>Movement</h4>
+                <p>
+                   Movement was one of our core mechanics, and we wanted for it to be intuitive and easy to control, so even a younger audience could play without problems.
+                   I started by giving the toy plane a permanent forward movement, so that our players would have only to steer, and worry about the direction rather than the speed of it.
+                   After that, I added a rotation mechanic to the plane, using the Q or E keys, would make our plane rotate to the left or the right, with the camera following said rotation,
+                   giving the chance to the player to perform stunts to evade enemy projectiles or explore parts of the level too tight to be entered while in a horizontal position.
+                </br>
+                   Following I noticed how our collision were not the best when the player hit a wall, as the plane would slide and (tremble? tipo che si bugga) on the hit wall. To solve the
+                   issue I designed a bouncing mechanic, that bounced back the player's plane in the opposite direction from where they hit the wall, that shortly after, got implemented with its animation.
+                </br>
+                   Moreover, after various playtest, I noticed how the automatic forward movement was giving problems to some of our players, when they tried to make precise maneuvers, so later on
+                   I decided to add two buttons, one to speed up and one to slow down the movement of our plane, giving more control to the players that desired it.
+                </p>
+
+                <h4>Combat</h4>
+                <!-- <div class="burglar-show">
                     <video autoplay controls muted>
                         <source src="images/Burglar-Clipboard-Showcase.mp4" type="video/mp4">
-                    </video>
+                    </video> -->
                     <div>
                         <p>
-                            My main responsibility was designing and implementing the User Interface.
-                            Note that I'm going to lump UX in with UI as I worked with both fluidly. Yes, they are
-                            different
-                            disciplines, yes I'll do it anyway.
-                            <br>
-                            A couple of specific principles dictated my choices for the UI.
-                        </p>
-                        <ol>
-                            <li>First off, I decided that I wanted it to be diegetic. As diegetic as I could make it.
-                            </li>
-                            <li>Second, I wanted to minimize clutter in the UI as much as possible.</li>
-                        </ol>
+                            While designing the movement of our player, I was also keeping in mind our second core mechanic, that being the shooting of our player but also of the game's enemies.
+                            For the player I decided to have two types of shooting, one with low damage but high rate of fire, like a minigun but in our case it was not shooting bullets but magic particles;
+                            and the second one being a powerful attack with a low rate of fire, that zoomed our camera in to take aim and shoot a magical rocket. Each shooting type had its own projectile speed, 
+                            reload time and magazine size.
+                        </br>
+                            When the shooting of the player was done, I and another designer, started working on the enemies. We wanted to have a good variety in enemy types and behaviours, so we designed
+                            5 different types of enemies, and they are:
+                        </p> 
+                            <style type="text/css">
+                                .tg{
+                                    /* vertical-align: top; */
+                                }
+                                .tg td {
+                                    border:0;
+                                    padding-bottom: 35px;
+                                    /* vertical-align: top;                                */
+                                }
+                                .tg td:first-of-type
+                                {
+                                    padding-right: 50px;
+                                }
+                                .tg tr:nth-child(even)
+                                {
+                                    direction: rtl;
+                                }
+                                </style>
+                                <table class="tg">
+                                <thead>
+                                  <tr>
+                                    <td><b>Ground Stationary:</b> A ground unit that does not move, in our case it was the Bigtopus, our game's boss, that spawns after all the enemies are defeated. Being stationary makes
+                                        it an easy target, but its health points and powerful melee and ranged attacks, make up for that weakness.</td>
+                                    <td><img style="width: 300px;" src="images/sycle.jpg"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>Ground Mobile:</b> The most frequent enemies, the unicorns are a ground unit that patrol in a set path, when the player enter their range, they start following them and shooting sparkly projectiles.
+                                        The unicorns patrols vary in size, having both small unicorns with low health points, and bigger mama unicorns that are more resistant to the player's magic. In addition, the unicors deals low damage
+                                        with their attacks but they have a unique rate of fire, almost like a laser, making them a threatning unit if not left alone.</td>
+                                    <td><img style="width: 300px;" src="images/sycle.jpg"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>Elevated Stationary:</b> The sharkmeids are non-moving units placed in elevated positions such as a desk or a table, when the player enter their range, they shoot a high speed beam of light from their 
+                                        trident. They have a slow rate of fire, so there's a delay between each shot</td>
+                                    <td><img style="width: 300px;" src="images/sycle.jpg"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>Flying Stationary:</b> banana</td>
+                                    <td><img style="width: 300px;" src="images/sycle.jpg"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>Flying Mobile:</b></v></td>
+                                    <td><img style="width: 300px;" src="images/sycle.jpg"></td>
+                                  </tr>                              
+                                </thead>
+                                </table>                        
+                        </br>
+                                
                     </div>
-                </div>
-                <div>
+
+                    <h4>Feedback</h4>
                     <p>
-                        So why make it diegetic? Well, interacting with a physical object rather than some weird
-                        floating text
-                        boxes tends to feel more natural in a VR environment. Not only can this help reduce motion
-                        sickness,
-                        it also adds to the immersion of the game.
-                        <br><br>
-                        Alright, but what do I mean by "minimize clutter"? By clutter I mean disorganized and/or
-                        overcomplicated UI.
-                        It can be confusing and overwhelming for the player if too much information is displayed in one
-                        space.
-                        But, it can also be irritating if the UI isn't easily accessible when the player needs it. This
-                        can turn out
-                        to be a bit of a balancing act, where readability and conciseness often compete with
-                        comprehensiveness.
-                        <br><br>
-                        I chose to combine the Menus and the Mission Information UI into a physical object that the
-                        player always
-                        carries with them, a Clipboard. Everything that the player could need on the fly is centralized
-                        in this single
-                        location. This way, the player has only a single object they need to keep track of for the most
-                        important UI,
-                        and it's always right on their person when they need it. I chose specifically a Clipboard
-                        because it makes intuitive
-                        sense for important information to be on them. This worked out well as all our playtesters
-                        instinctively referred to
-                        it for menus and information even without being prompted to.
-                        <br><br>
-                        Actually creating the Clipboard, which I wanted to behave like an actual clipboard, presented
-                        some challenges.
-                        To keep it looking as natural as possible, I wanted the pages to flip and contort like paper
-                        would.
-                        In order to interact with the UI, I would need a Widget (Unreal's UI elements) to lay against
-                        the page of the clipboard.
-                        The page serves as a backdrop, and the Widget allows us to interact, so we now have a menu on a
-                        clipboard, right?
-                        Well, yes, but actually no. Since Widgets are projected on a flat plane, the widget cannot
-                        contort with our pages
-                        as they bend and flip over. Widgets just don't bend like that. But I need the widgets, because a
-                        regular mesh (like a page)
-                        can't be interacted with like UI. And if I just remove the Widget when the page turns, then the
-                        page will turn white as it flips.
-                        Not very realistic, is it? I needed the visuals of the Widget to stay on the page even as the
-                        page turned over.
-                        <br><br>
-                        I looked around online for a few days but could not find any methods for how to accomplish this.
-                        I don't know, maybe
-                        I'm the first to ever have this issue. My solution was to utilize something called
-                        SceneCaptureComponents and RenderTargets
-                        alongside Dynamic Materials. Right above my page I put a WidgetComponent, the actual UI itself.
-                        Above it, a SceneCaptureComponent2D
-                        sits in wait for a signal. As I flip the page, the SceneCapture takes a picture of the Widget.
-                        This picture is broadcast to a
-                        RenderTarget2D, basically storing the visual information of the UI. I pass this RenderTarget's
-                        texture to a Dynamic Material
-                        which I can apply to the page's mesh. I can then safely remove the Widget, and the page will
-                        look identical.
-                        <br>
-                        In summary; I take a photo of the UI and stick that onto the page as it flips, thus making it
-                        look like the UI contorts.
-                        <br><br>
-                        I worked closely with artist (and part-time speed demon) Felicia to create all the functional
-                        elements such as the meshes and
-                        animations needed for the clipboard, as my technique requires very exact tolerances. We also
-                        worked together to make the
-                        icons for the UI.
-                        <br><br>
-                        Designing and programming the clipboard UI was an iterative and arduous process, spanning nearly
-                        the entire project.
-                        It was a fun learing experience and I'm proud of the end result.
+                        enemy hp, crosshair bar for amount of bullets, animation when hit
                     </p>
-                </div>
-                <h4>Project Coordination</h4>
-                <p>
-                    As one of the main coordinators in the team, I helped direct the workflow, ensuring our efforts were
-                    organized and productive.
-                    I helped our code wizard Casper in handling any technical issues we faced with Unreal, as well as
-                    designing and programming a comprehensive save system.
-                    This role allowed me to balance resources, manage timelines, and harmonize our efforts.
-                </p>
-                <h4>Testing and Debugging</h4>
-                <p>
-                    The task of spotting and fixing bugs, ensuring that our final product was as smooth and immersive as
-                    possible, was a responsibility I embraced.
-                    From coordinating playtesting sessions to refining the logic for saving and loading game data, these
-                    behind-the-scenes contributions were essential
-                    in enhancing the game's overall quality.
-                </p>
-                <h4>Sound Design and Game Environment Enhancement</h4>
-                <p>
-                    When a team member was absent for a long period of time, I had to fill in by working with and
-                    implementing sound into the game.
-                    This role stretched my skills and allowed me to add another layer of life to our game. It was a fun
-                    change of pace from what I had been doing.
-                    I worked on the dynamic walking sounds, the overall sound environment, and also designed and created
-                    a hub area for the player.
-                </p>
-                <h4>Project Completion</h4>
-                <p>
-                    In the final stages of our project, I developed a system for unlockable cosmetics and a hover
-                    display system for enhanced UI interaction.
-                    My focus also involved refining the puzzles and win/lose conditions, ensuring they were engaging and
-                    well-defined.
-                    There were quite a few late nights, but it was a lot of fun.
-                </p>
-                <h4>Conclusion</h4>
-                <p>
-                    Throughout this nine-week project, I had the privilege of wearing many hats and contributing to
-                    various aspects of our game.
-                    The responsibilities I undertook were as much about the collective effort as my individual role.
-                    Having to step in and help wherever we faced difficulties,
-                    I am grateful for the many opportunities to learn and the opportunity to contribute in meaningful
-                    ways.
-                    The pride I feel is not just for the tasks I accomplished but more so for the successful result of
-                    our teamwork and the rewarding journey we navigated together.
-                </p>
-                <a class="button clicker" href="dev_diary/GP2.html" target="_blank">Read More!</a>
+                    <h4>Replayability</h4>
+                    <p>
+                        Game was supposed to have over 5 rooms, but our vertical slice only had 1 so for replayability bla bla
+                    </p>
+
+                </br>
+                    <h2>Level Design</h2>
+                    <p>
+                        As one of the main coordinators in the team, I helped direct the workflow, ensuring our efforts were
+                        organized and productive.
+                        I helped our code wizard Casper in handling any technical issues we faced with Unreal, as well as
+                        designing and programming a comprehensive save system.
+                        This role allowed me to balance resources, manage timelines, and harmonize our efforts.
+                    </p>
+    
+                </br>
+                    <h2>System Design</h2>
+                    <p>
+                        The task of spotting and fixing bugs, ensuring that our final product was as smooth and immersive as
+                        possible, was a responsibility I embraced.
+                        From coordinating playtesting sessions to refining the logic for saving and loading game data, these
+                        behind-the-scenes contributions were essential
+                        in enhancing the game's overall quality.
+                    </p>
+    
+                    <h2>Sound Design and Game Environment Enhancement</h2>
+                    <p>
+                        When a team member was absent for a long period of time, I had to fill in by working with and
+                        implementing sound into the game.
+                        This role stretched my skills and allowed me to add another layer of life to our game. It was a fun
+                        change of pace from what I had been doing.
+                        I worked on the dynamic walking sounds, the overall sound environment, and also designed and created
+                        a hub area for the player.
+                    </p>
+    
+                    <h2>Conclusion</h2>
+                    <p>
+                        Throughout this nine-week project, I had the privilege of wearing many hats and contributing to
+                        various aspects of our game.
+                        The responsibilities I undertook were as much about the collective effort as my individual role.
+                        Having to step in and help wherever we faced difficulties,
+                        I am grateful for the many opportunities to learn and the opportunity to contribute in meaningful
+                        ways.
+                        The pride I feel is not just for the tasks I accomplished but more so for the successful result of
+                        our teamwork and the rewarding journey we navigated together.
+                    </p>
+                    <a class="button clicker" href="dev_diary/GP2.html" target="_blank">Read More!</a>
+                </div>       
             </div>
             <hr style="width: 85vw; margin: 64px;">
             <div class="game-section">
