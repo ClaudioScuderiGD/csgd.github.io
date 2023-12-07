@@ -625,9 +625,10 @@
             <hr style="width: 85vw; margin: 64px;">
             <div class="game-section">
                 <h2>Major Contributions</h2>
-                <p><span class="highlight">Gameplay Design:</span> designed the player's movement and shooting, and four different type of enemies.</p>
+                <p><span class="highlight">Gameplay Design:</span> designed the player's movement and shooting, and four different types of enemies.</p>
                 <p><span class="highlight">Level Design:</span> designed an open space room for a satisfying flying experience, puzzles with hidden rewards, and positioned the enemies in the level and set their movement.</p>
                 <p><span class="highlight">System Design:</span> responsible for balancing all the stats related to the player, the enemies and their boss.</p>
+                <center>Read further down for more information on each category</center>
             </div>
 
             <div class="game-section">
@@ -667,12 +668,13 @@
                             and the second one being a powerful attack with a low rate of fire, that zoomed our camera in to take aim and shoot a magical rocket. Each shooting type had its own projectile speed, 
                             reload time and magazine size.
                         </br>
-                            When the shooting of the player was done, I and another designer, started working on the enemies. We wanted to have a good variety in enemy types and behaviours, so we designed
-                            5 different types of enemies, and they are:
+                            When the shooting of the player was done, I and another designer, started working on the enemies. We wanted to have a good variety of enemy types and behaviours, so we designed
+                            4 different types of enemies, each with its own strenght and weaknesses, and they are:
                         </p> 
                             <style type="text/css">
                                 .tg{
                                     /* vertical-align: top; */
+                                    color:white;
                                 }
                                 .tg td {
                                     border:0;
@@ -691,57 +693,85 @@
                                 <table class="tg">
                                 <thead>
                                   <tr>
-                                    <td><b>Ground Stationary:</b> A ground unit that does not move, in our case it was the Bigtopus, our game's boss, that spawns after all the enemies are defeated. Being stationary makes
+                                    <td><b>Ground Stationary:</b> A ground unit that does not move, in our case it was the Bigtopus, our game's boss, 
+                                        that spawns after all the enemies are defeated. Being stationary makes
                                         it an easy target, but its health points and powerful melee and ranged attacks, make up for that weakness.</td>
-                                    <td><img style="width: 300px;" src="images/sycle.jpg"></td>
+                                    <td><img style="width: 200px;" src="images/bigtopusBg.png"></td>
                                   </tr>
                                   <tr>
-                                    <td><b>Ground Mobile:</b> The most frequent enemies, the unicorns are a ground unit that patrol in a set path, when the player enter their range, they start following them and shooting sparkly projectiles.
-                                        The unicorns patrols vary in size, having both small unicorns with low health points, and bigger mama unicorns that are more resistant to the player's magic. In addition, the unicors deals low damage
+                                    <td><b>Ground Mobile:</b> The most frequent enemies, the unicorns are a ground unit that patrol in a set path. When the player enter their range, 
+                                        they start following them and shooting sparkly projectiles.
+                                        The unicorns patrols vary in size, having both small unicorns with low health points, and bigger mama unicorns that are more resistant to the player's magic. 
+                                        In addition, the unicors deals low damage
                                         with their attacks but they have a unique rate of fire, almost like a laser, making them a threatning unit if not left alone.</td>
-                                    <td><img style="width: 300px;" src="images/sycle.jpg"></td>
+                                    <td><img style="width: 200px;" src="images/unicorn.png"></td>
                                   </tr>
                                   <tr>
-                                    <td><b>Elevated Stationary:</b> The sharkmeids are non-moving units placed in elevated positions such as a desk or a table, when the player enter their range, they shoot a high speed beam of light from their 
-                                        trident. They have a slow rate of fire, so there's a delay between each shot</td>
-                                    <td><img style="width: 300px;" src="images/sycle.jpg"></td>
+                                    <td><b>Elevated Stationary:</b> The sharkmeids are non-moving units placed in elevated positions such as desks or tables. When the player enter their range,
+                                         they shoot a high speed beam of light from their 
+                                        trident. They have a slow rate of fire but they compensate thanks to their projectile speed and damage.</td>
+                                    <td><img style="width: 200px;" src="images/sharkmeid.png"></td>
                                   </tr>
                                   <tr>
-                                    <td><b>Flying Stationary:</b> banana</td>
-                                    <td><img style="width: 300px;" src="images/sycle.jpg"></td>
-                                  </tr>
-                                  <tr>
-                                    <td><b>Flying Mobile:</b></v></td>
-                                    <td><img style="width: 300px;" src="images/sycle.jpg"></td>
-                                  </tr>                              
+                                    <td><b>Flying Stationary:</b> The teru teru bozu are a flying unit attached to the roof thanks to a rope sustaining them. They also shoot the player as soon
+                                            as they enter their range, but their attack is different from the rest. The teru teru bozu shoots a projectile that expands after a few seconds, 
+                                            forming a massive bubble that damage everything inside it. In exchange they have a short range and even though they are flying, they do not really
+                                            move around, as their rope lock them in place.</td>
+                                    <td><img style="width: 200px;" src="images/teruteru.png"></td>
+                                  </tr>                                      
                                 </thead>
                                 </table>                        
                         </br>
-                                
                     </div>
-
                     <h4>Feedback</h4>
                     <p>
-                        enemy hp, crosshair bar for amount of bullets, animation when hit
+                        After the core mechanics were ready, it was time to design how to communicate all those actions to the player.
+                        I started with a standard Health bar in our UI, showing the player´s current health. After that, we added an animation
+                        for when the player gets hit, and a red outline on the screen, to communicate it as clearly as possible.
+                    </br>
+                        Successively, I wanted to prevent spam shooting in our game, so I designed a overcharge system that disabled the player´s shooting if they shot too
+                        many bullets in a short amount of time. To convey that without adding an ammo counter, I added another bar, inside the crosshair to be specific,
+                        that was slightly filled every time the player shot a bullet, and emptyed if they did not shoot for a few seconds.
+                        
                     </p>
+                </br>
                     <h4>Replayability</h4>
                     <p>
-                        Game was supposed to have over 5 rooms, but our vertical slice only had 1 so for replayability bla bla
+                        The game was supposed to have 5 different rooms for our player to explore, but our vertical slice only had 1 room
+                        to show our gameplay. Even so, during playtest we observed how some of our players wanted to compete with each other, trying to 
+                        complete the level in the fastest way possible. Analyzing that, I decided to add a score system, that gives points to the player on
+                        each enemy defeated depending on a multiplier based on playtime. This mechanic, gave a visual way to our player to discover who would 
+                        have the highest score, moreover, it created retention, improving our replayability, as players would try to improve their score.                      
                     </p>
-
-                </br>
+                </br>  
+                <div class="game-section-container game-section">
+                    <div class="half-section"> 
                     <h2>Level Design</h2>
                     <p>
-                        As one of the main coordinators in the team, I helped direct the workflow, ensuring our efforts were
-                        organized and productive.
-                        I helped our code wizard Casper in handling any technical issues we faced with Unreal, as well as
-                        designing and programming a comprehensive save system.
-                        This role allowed me to balance resources, manage timelines, and harmonize our efforts.
+                        For this project I worked closely with the art department to create our game level. As we wanted to have a believable space, before
+                        creating mockups or blockouts, each member of the team sent a photo of their room as reference. I started analyzing them to see where the furnishings were
+                        placed, which were the recurrent items, and how large our environment should be. After having a rough idea, I created the level blockout in engine.
+                        As soon as we started playtesting our movement in the scene, we noticed that if the player moved in a straight direction, they would traverse the 
+                        entirety of the room in less than 10 seconds, and that was an issue.
                     </p>
-    
+                    </div>
+                        <div class="half-section"> 
+                        <img style="padding-top: 125px; padding-left: 50px" src="images/earlyLevel.gif">
+                </div>
+            </div>
+                     <p>
+                        I and the rest of the team liked the movement speed of our character, so the only choice was to make the level bigger. I started looking at references of mansions´ rooms,
+                        to then create a new blockout that was 3 times larger when compared to our old level. Then, I divided it into 7 different areas,
+                        each having something that differentiate it from the others. Some areas would be safe zones, some would contain hidden power-ups, others would have more 
+                        enemies. In doing so I tried to give meaning to each part of the room and have a different pacing depending on where the player would fly.
+                     </p>
                 </br>
                     <h2>System Design</h2>
                     <p>
+                        With the core elements in place, 
+                        enemy stats and waves
+                        introduce healing orbs from enemies kills
+
                         The task of spotting and fixing bugs, ensuring that our final product was as smooth and immersive as
                         possible, was a responsibility I embraced.
                         From coordinating playtesting sessions to refining the logic for saving and loading game data, these
