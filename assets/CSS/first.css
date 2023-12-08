@@ -1,3 +1,15 @@
+
+.waypoint  {
+   opacity:0;
+   transform: translateY(200px);
+   transition-duration: 1s;
+}
+
+.waypoint.visible {
+    opacity:1;
+    transform: translateY(0px);
+ }
+
 :root {
     --color: #141414;
 }
