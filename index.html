@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/CSS/first.css">
     <script src="assets/JS/script.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     
 </head>
 
@@ -639,15 +638,15 @@
             </div>
 
             <hr style="width: 85vw; margin: 64px;">
-            <div class="game-section waypoint">
+            <div class="game-section">
                 <h2>Major Contributions</h2>
                 <p><span class="highlight">Gameplay Design:</span> designed the player's movement and shooting, and four different types of enemies.</p>
                 <p><span class="highlight">Level Design:</span> designed an open space room for a satisfying flying experience, puzzles with hidden rewards, and positioned the enemies in the level and set their movement.</p>
                 <p><span class="highlight">System Design:</span> responsible for balancing all the stats related to the player, the enemies and their boss.</p>
                 <center>Read further down for more information on each category</center>
             </div>
-
-            <div class="game-section waypoint">
+        </br>
+            <div class="game-section">
                 <h2>Gameplay Design</h2>
                 <p>
                     I took care of the majority of the gameplay related mechanics for this project. At the time I was playing the early access version of Everspace 2, so I had an optimal reference for what should have been our space shooter,
@@ -803,7 +802,7 @@
                         Like any game, while playtesting I discovered many bugs, so I created a bug tracking document encompassing how to replicate them, 
                         their fix priority, and possible solutions.                       
                     </p>
-                   
+                </br>
                     <h2>Conclusion</h2>
                     <p>
                         Throughout this nine-week project, I had the privilege of wearing many hats and contributing to
@@ -1214,8 +1213,5 @@
             <div style="height: 64px"></div>
         </div>
     </section>
-
-    <script>document.querySelectorAll('.waypoint').forEach((element) =>  {   new Waypoint({     element,     handler: function(direction) {       element.classList.add('visible')     }   }) })
-    </script>
 </body>
 </html>
