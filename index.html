@@ -189,7 +189,7 @@
                             <h3>Learn More</h3>
                         </div>
                         <div class="project-length">
-                            <p>6 Weeks</p>
+                            <p>9 Weeks</p>
                         </div>
                         <div class="team-size">
                             <p>~20</p><img src="images/people-icon.png">
@@ -210,7 +210,7 @@
                             <h3>Learn More</h3>
                         </div>
                         <div class="project-length">
-                            <p>6 Weeks</p>
+                            <p>9 Weeks</p>
                         </div>
                         <div class="team-size">
                             <p>12</p><img src="images/people-icon.png">
@@ -256,7 +256,7 @@
                             <p>4 Weeks</p>
                         </div>
                         <div class="team-size">
-                            <p>12</p><img src="images/people-icon.png">
+                            <p>11</p><img src="images/people-icon.png">
                         </div>
                     </a>
                     <p id="flavor-text">
@@ -290,7 +290,7 @@
                         Our goal for this project was to
                     </p>
                     <h2>Project Breakdown</h2>
-                    <p>6 Week Group Project</p>
+                    <p>6 Weeks Group Project</p>
                     <p>11 Team Members</p>
                     <p>Made in Tengine</p>
                     <p>Platforms: Windows & Playstation 5</p>
@@ -456,13 +456,13 @@
                     </p>
                 </br>
                     <h2>Project Breakdown</h2>
-                    <p>9 Week Group Project</p>
+                    <p>9 Weeks Group Project</p>
                     <p>~20 Team Members</p>
                     <p>Powered by Unreal Engine 4</p>
                     <p>Platforms: Windows</p>
                 </div>
-                <div class="half-section syclenarrow">
-                    <img src="images/SycleNarrow.jpg">
+                <div class="half-section syclenarrow ">
+                    <img style="height: 800px;" src="images/SycleNarrow.jpg">
                 </div>
             </div>
 
@@ -486,7 +486,7 @@
                     Moreover, introduced environmental obstacles, enhancing strategic depth.</p>
                 <p><span class="highlight">Level Design:</span> drafted and whiteboxed multiple levels, incorporating
                     diverse win conditions.
-                    Ensured balance between teaching mechanics, combat scenarios, and puzzle-solving elements
+                    Ensured balance between teaching mechanics, combat scenarios, and puzzle-solving elements.
                 </p>
                 <p><span class="highlight">System Design:</span> responsible for the delicate balance of the reverse
                     progression system and gameplay elements.
@@ -569,7 +569,11 @@
                     ended up creating over 10 different obstacles with
                     distinctive effects, pointy walls that would make enemies bleed, columns that could be broken and
                     stun enemies hit by the rubble, terrains that would slow
-                    or damage enemies, boulders that could be pushed and knock away enemies and so on.
+                    or damage enemies, boulders that could be pushed and knock away enemies and so on.  
+                        <center>                         
+                            <img style="width: 800px;" src="images/syclestats3.png">
+                            <p style=" font-size: small; font-style: italic;">Some of the environmental obstacles.</p>
+                        </center>
 
                 </p>
                 </br>
@@ -671,7 +675,7 @@
                     </p>
                 </br>
                     <h2>Project Breakdown</h2>
-                    <p>9 Week Group Project</p>
+                    <p>9 Weeks Group Project</p>
                     <p>14 Team Members</p>
                     <p>Made in Unity</p>
                     <p>Platforms: PC</p>
@@ -834,10 +838,14 @@
                     </br>
                     Successively, I wanted to prevent spam shooting in our game, so I designed an overcharge system that
                     disabled the player´s shooting if they shot too many bullets in a short amount of time. To convey
-                    that without adding an ammo counter, I added another bar, inside the crosshair to be specific, that
+                    that without adding an ammo counter, I added a red bar, inside the crosshair to be specific, that
                     was slightly filled every time the player shot a bullet, and emptied if they did not shoot for a few
-                    seconds.
-
+                    seconds.     
+                    <!-- <img style="" src="images/wonderCross.gif"> -->
+                    <img style="" src="images/WonderCrossCut.gif">
+                    <center>
+                        <p style=" font-size: small; font-style: italic;"></p>
+                    </center>
                 </p>
                 </br>
                 <h4>Replayability</h4>
@@ -874,8 +882,8 @@
                     I and the rest of the team liked the movement speed of our character, so the only choice was to make
                     the level bigger. I started looking at references of mansions´ rooms,
                     to then create a new blockout that was 3 times larger when compared to our old level. Then, I
-                    divided it into 7 different areas,
-                    each offering a unique experience, from safe zones to hidden power-ups and increased enemy
+                    divided the new level into 7 different areas,
+                    each offering a unique experience, from safe zones to environmental mazes hiding power-ups and increased enemy
                     encounters. The goal was to provide meaning and pacing in different parts of the room, contributing
                     to an engaging gameplay experience.
                     </br>
@@ -883,6 +891,9 @@
                     <img style="" src="images/lv2.png">
                     <img style="" src="images/lv3.png">
                     <img style="" src="images/lv4.png">
+                </br>
+                    Moreover, while placing the enemies in the scene, I set the route of all the moving ones using a point to point movement system, 
+                    and created various spawn points for them, to have somewhat different runs everytime the player decided to run the game.
                 </p>
                 </br>
                 <h2>System Design</h2>
@@ -890,9 +901,8 @@
                     With the core elements in place, I started balancing the stats for the player and the enemies. When
                     we started designing the enemies we wanted them to feel like distinctive units, for this reason, I
                     gave each enemy a unique rate of fire, range, bullet speed, lifetime, and damage. When that was
-                    done, I designed how many enemies would spawn during the 2 game waves, what path they would patrol,
-                    and then I implemented various spawnpoints for some of them, to have somewhat different runs if the
-                    player restarted the game. After that, the game went through many playtest cycles, and I ended up
+                    done, I designed how many enemies would spawn during the 2 game waves and what path they would follow.
+                    After that, the game went through many playtest cycles, and I ended up
                     modifying many of the enemies´ stats to reach the desired game feel. During playtest we also noticed
                     how the majority of the players preferred a risky approach when confronting enemies rather than
                     using their range advantage, resulting in soaking in enemy projectiles, leading to game over. Hence,
@@ -924,6 +934,8 @@
         <div class="nocturnal-canvas">
             <!-- Content for nocturnal page -->
             <img src="images/nocturnalwide.jpg" class="nocturnal-canvas-img">
+            <br>
+            <br>
             <!-- <img src="images/nocturnalLogoShort.png" class="game-logo"> -->
             <!-- <h1>2D Platformer</h1> -->
             <div class="game-section-container game-section">
@@ -943,7 +955,7 @@
                     </p>
                 </br>
                     <h2>Project Breakdown</h2>
-                    <p>6 Week Group Project</p>
+                    <p>4 Weeks Group Project</p>
                     <p>14 Team Members</p>
                     <p>Made in Unity</p>
                     <p>Platforms: PC</p>
