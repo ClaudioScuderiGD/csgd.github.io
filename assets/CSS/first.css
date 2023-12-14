@@ -1107,12 +1107,12 @@ a:hover .portfolio-link {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 64px;
+    gap: 25px;
 }
 
-.wonder-show video{
+.wonder-show img{
     max-width: 400px !important;
-    margin-top: 32px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1120,7 +1120,7 @@ a:hover .portfolio-link {
         flex-direction: column;
         gap: 0px;
     }
-    .wonder-show video{
+    .wonder-show img{
         width: 80% !important;
     }
 }
