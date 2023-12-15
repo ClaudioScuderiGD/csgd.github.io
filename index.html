@@ -240,8 +240,8 @@
                     <p id="flavor-text">
                         Priestcore is a fast paced first person arena shooter.
                         <br><br>
-                        As the lead designer my main responsibilities were Project Management, Gameplay, System, Level
-                        and UI design.
+                        As the lead designer I took care of Project Management and every aspect
+                        of its design.
                     </p>
                     <a class="button" href="#arenashooter">Read More</a>
                 </div>
@@ -260,8 +260,7 @@
                         </div>
                     </a>
                     <p id="flavor-text">
-                        Nocturnal is a 2D platformer with a dark setting. The player using his three abilities has to
-                        overcome many deadly trials to reach his goal.
+                        Nocturnal is a 2D platformer with a dark setting.
                         <br><br>
                         My main responsibilities were Gameplay and Level design.
                     </p>
@@ -506,7 +505,7 @@
                     would fit her theme, not only mechanic-wise, but also
                     from a narrative point of view. In doing so I started researching various Mythologies and their
                     related gods, mostly Mesopotamian, Inca, and African
-                    until I found all the references I needed. The player had 6 abilities at his disposal (only 4 made
+                    until I found all the references I needed. The player had 6 abilities at their disposal (only 4 made
                     it
                     into the game), each with a unique effect and
                     different use case, they are:
@@ -621,7 +620,7 @@
                             example, at first we used AP (action points) to use our abilities,
                             but we decided to change that resource to HP (health point) to display even better our core
                             pillar <b>Sacrifice</b>. With that update other problems
-                            arose, as we would be using our life for each spell thrown at the enemies, so we introduced
+                            arose, as we would be using our life for each spell thrown at the enemies, so I introduced
                             a healing mechanic when the player killed an enemy with
                             a melee attack. In addition, I tweaked the player and enemies´ stats until the game reached
                             the desired feel.
@@ -672,7 +671,7 @@
                         Wonder Wings takes flight as a vibrant 3D flying shooting game where toys spring to life in
                         whimsical adventure. Players assume control of Mata, a plushie piloting a toy plane, with the
                         mission of thwarting the evil wizard SpellHound and liberating brainwashed toys. The challenge
-                        lies in navigating through obstacle-laden environments and engaging in aerial combat without
+                        lies in navigating through a obstacle-laden environment and engaging in aerial combat without
                         succumbing to enemy fire or crashing the plane.
                         <br><br>
                         With this game, we aimed to address a gap in the market for space shooters, but with a unique
@@ -739,13 +738,13 @@
                 <p>
                     Movement was one of our core mechanics, and we wanted it to be intuitive and easy to control, so
                     even a younger audience could play without problems. I started by giving the toy plane a permanent
-                    forward movement, so that our players would have only to steer, and worry about the direction rather
-                    than the speed of it. After that, I added a rotation mechanic to the plane, using the Q or E keys,
+                    forward movement, so that our players would have only to steer and worry about the direction rather
+                    than their speed. After that, I added a rotation mechanic to the plane, using the Q or E keys,
                     would make our plane rotate to the left or the right, with the camera following said rotation,
                     giving the chance to the player to perform stunts to evade enemy projectiles or explore parts of the
                     level too tight to be entered while in a horizontal position.
                     </br>
-                <div class="wonder-show">
+                <div style="color: white" class="wonder-show">
                     <img src="images/wonderbouncingGif.gif">
 
                     Following I noticed how our collisions were not the best when the player hit a wall, as the plane
@@ -753,6 +752,8 @@
                     bounced back the player's plane in the opposite direction from where they hit the wall, which
                     shortly after, got implemented with its animation.
                 </div>
+                </p>
+                 <p style="color: white" >
                 </br>
                 Moreover, after various playtests, I noticed how the automatic forward movement was giving problems
                 to some of our players when they tried to make precise maneuvers, so later on, I decided to add two
@@ -812,7 +813,7 @@
                                     unicorns with low health points, and bigger mama unicorns that are more resistant to
                                     the player's magic. In addition, the unicorns deal low damage with their attacks but
                                     they have a unique rate of fire, almost like a laser, making them a threatening unit
-                                    if not left alone. </td>
+                                     if not left alone.</td>
                                 <td><img style="width: 200px;" src="images/unicorn.png"></td>
                             </tr>
                             <tr>
@@ -845,7 +846,7 @@
                             After that, I added visual cues for player damage such as a red outline on the screen, and successively
                             an animation, to communicate it as clearly as possible.
                             </br>
-                            Successively, I wanted to prevent spam shooting in our game, so I designed an overcharge
+                            Following that, I also wanted to prevent spam shooting in our game, so I designed an overheat
                             system that disabled the player´s shooting if they fired too many bullets in a short amount of time. To
                             convey that without adding an ammo counter, I added a red bar, inside the crosshair to be specific,
                             that was slightly filled every time the player shot a bullet, and emptied if they did not shoot
@@ -912,42 +913,54 @@
                     the level bigger. I started looking at references of mansions´ rooms,
                     to then create a new blockout that was 3 times larger when compared to our old level. Then, I
                     divided the new level into 7 different areas,
-                    each offering a unique experience, from safe zones to environmental mazes hiding power-ups and
+                    each offering a somewhat unique experience, from safe zones to environmental mazes hiding power-ups and
                     increased enemy
                     encounters. The goal was to provide meaning and pacing in different parts of the room, contributing
                     to an engaging gameplay experience.    
                     </br>
                     Moreover, while placing the enemies in the scene, I set the route of all the moving ones using a
                     point to point movement system,
-                    and created various spawn points for them, to have somewhat different runs everytime the player
+                    and created various spawn points for them, to have kind of different runs everytime the player
                     decided to run the game.
                 </br>
+                    Here there are some screens of the level with a description of their features:
+                </br>
             </p>
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <td>The <b>desk</b> is a large section featuring sharkmeids and many patrolling enemies on the ground near it.
+                            It is a dangerous area having the highest amount of enemies per square meter, but it is worth the risk, as
+                            inside the desk, behind an environmental maze the strongest powerup lies in wait.</td>
+                        <td style="padding-bottom: 10px"><img style="height: 250px;" src="images/deskWW.png"></td>
+                    </tr>
+                    <tr>
+                        <td>The <b>wardrobe</b> is a small area located to the right of the desk. It is a relatively safe area as there
+                            are only two enemies. This part of the level let players relax and rewards the ones that explore every nook 
+                            and cranny of the level, as there are two hidden power-ups, one behind the boots inside the wardrobe and 
+                            the other inside the basketball hoop. </td>
+                        <td style="padding-bottom: 10px"><img style="height: 250px;" src="images/wardrobeWW.png"></td>
+                    </tr>
+                    <tr>
+                        <td>On the left of the desk, we can view the <b>window</b> area, hosting multiple types of enemies and showing the 
+                            shield power-up, which offers a strong buff to the player´s defense but risky to approach without clearing
+                            the enemies around it.</td>
+                        <td style="padding-bottom: 10px"><img style="height: 250px;" src="images/windowWW.png"></td>
+                    </tr>         
+                    <tr>
+                        <td>In this last picture we can see the  <b>Bunk Bed</b> and our aesthetic final result with the shaders and lighting.</td>
+                        <td style="padding-bottom: 10px"><img style="height: 250px;" src="images/lv4.png"></td>
+                    </tr>
+                </thead>
+            </table>
 
-                <div class="game-section-container game-section">
-                    <div class="half-section">
-                    <img style="margin-left: 100px; height: 280px" src="images/lv1.png">
-                </div>
-                <div class="half-section">
-                    <img style="margin-left: 50px; height: 280px" src="images/lv2.png">
-                </div>
-            </div>
-                <div class="game-section-container game-section">
-                    <div class="half-section">
-                    <img style="margin-left: 100px; height: 280px;" src="images/lv3.png">
-                </div>
-                <div class="half-section">
-                    <img style="margin-left: 50px; height: 280px" src="images/lv4.png">
-                </div>
-            </div>
-                
                 </br>
                 <h2>System Design</h2>
                 <p>
                     With the core elements in place, I started balancing the stats for the player and the enemies. When
                     we started designing the enemies we wanted them to feel like distinctive units, for this reason, I
                     gave each enemy a unique rate of fire, range, bullet speed, lifetime, and damage. When that was
-                    done, I designed how many enemies would spawn during the 2 game waves and what path they would
+                    done, I designed how many enemies would spawn during the two game waves and what path they would
                     follow.
                     After that, the game went through many playtest cycles, and I ended up
                     modifying many of the enemies´ stats to reach the desired game feel. During playtest we also noticed
@@ -1042,7 +1055,7 @@
                     animations.
                     </br>
                     The finalized abilities included a double jump, a shrinking ability for tight spaces to evade traps,
-                    and a phantom creation feature to unlock doors or locks.
+                    and a phantom creation feature to unlock doors.
                 </p>
                 </br>
                 <div class="game-section-container game-section">
@@ -1054,18 +1067,18 @@
                             Hollow Knight´s white palace, as I was playing it at the time. After analyzing those games,
                             I created a legend of assets that I would need for our level. Knowing our game would be set
                             in a dark forest, these included spiky vines, swinging trunks, moving platforms, and
-                            patrolling enemies. With that ready I started sketching possible platforming challenges that
+                            moving snail as our enemies. With that ready I started sketching possible platforming challenges that
                             utilized one or a mix of our abilities. When I had a couple dozen of those sketches, I
                             created a mockup of a possible game level and successively whiteboxed it in the engine.
 
                         </p>
                     </div>
                     <div class="half-section">
-                        <img style="height: 300px; margin-top: 130px; margin-left: 50px;" src="images/oldLevel.jpg">
+                        <img style="height: 300px; margin-top: 130px; margin-left: 50px;" src="images/oldLevel2.jpg">
                         <center>
                             <p style="line-height: 0; font-size: small; font-style: italic;">The first development cycle
                                 of the game
-                                level. Yes it was hell.</p>
+                                level. Yes, it was pretty hard.</p>
                         </center>
                     </div>
                 </div>
@@ -1073,12 +1086,11 @@
                     As soon as our abilities were ready, the group started to playtest the level, and here I noticed how
                     the majority of the playtesters struggled to surpass some sections. After collecting feedback, I
                     ended up reworking the level, introducing a tutorial for each ability at the start of the game,
-                    lowering the difficulty curve in some areas, and making the jump sections more intuitive. more
-                    intuitive.
+                    lowering the difficulty curve in some areas, and making the jump sections more intuitive.
                 </p>
                 <img style="width: 1300px;" src="images/fullLev.jpg">
                 <center>
-                    <p style="line-height: 2; font-size: small; font-style: italic;">The final look of the level</p>
+                    <p style="line-height: 0; font-size: small; font-style: italic;">The final look of the level</p>
                 </center>
                 </br>
                 <h2>System Design</h2>
@@ -1086,7 +1098,7 @@
                     After the level was ready, I tweaked the player´s speed and jump height to fit to the game level. I
                     also set the range and timer for the moving platforms, spikes, and trunks.
                     </br>
-                    Moreover, in the game's first playtest the level was too hard for the majority of the players. As a
+                    Moreover, as said before, in the game's first playtest the level was too hard for the majority of the players. As a
                     solution, I reworked the level, but to prepare for future playtests I also created a beat chart to
                     map the difficulty curve in each section of the level as a graph. This graph would let me know if I
                     would have to rework other obstacles in certain areas or add safe zones to break the pacing of the
@@ -1097,8 +1109,7 @@
                 <p>
                     Nocturnal stands as a significant milestone in my game design journey, marking my initiation into
                     group projects. It was both a rewarding and challenging experience, offering valuable lessons, for
-                    example
-                    the importance of adapting a concept to fit the needs or constraints of the group, to obtain the
+                    example the importance of adapting a concept to fit the needs or constraints of the group, to obtain the
                     best possible result.
                 </p>
             </div>
