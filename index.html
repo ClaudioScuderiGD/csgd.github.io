@@ -30,7 +30,13 @@
     </div>
 
     <nav id="navbar">
-        <a href="#home">Home</a>
+
+        <div class="dropdown">
+        <a href="#home">CLAUDIO SCUDERI - GAME DESIGNER</a>
+        </div>
+
+        <!-- <a href="#home">Home</a> -->
+
         <div class="dropdown">
             <a class="dropbtn" href="#allgames">Projects
                 <i class="fa fa-caret-down"></i>
@@ -48,29 +54,128 @@
         <!-- <a href="dev_diary/Home.html" target="_blank">Dev Logs</a> -->
         <a href="#cv">Resume</a>
 
+        <a href="mailto:claudioscuderi.gd@gmail.com"><img style="width: 32px; height: 32px;" src="images/email-icon-white.png"></a>
+        <a href="https://www.linkedin.com/in/cs-gd/" target="_blank"><img style="width: 32px; height: 32px;"src="images/linkedin-icon_white.png"></a>
+
         <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
             <img src="images/menu.png" alt="Menu" id="sidenavIcon">
         </a>
     </nav>
 
-
     <section id="home">
         <!-- Content for Home page -->
+
         <div class="video-container">
-            <video id="background-video" autoplay loop muted>
+            <!-- <video id="background-video" autoplay loop muted>
                 <source src="images/SycleTrailer.mp4" type="video/mp4">
-            </video>
+            </video> -->
+            <img src="images/homebg.jpg">
+
+
             <div class="text-container">
                 <h1>CLAUDIO<br>SCUDERI</h1>
                 <p>GAME DESIGNER</p>
             </div>
         </div>
-        <div class="featured-game">
+
+        <center><h2>PROJECTS</h2></center>
+
+        <div class="allgames-container">
+            <div class="allgames-canvas">
+                <!-- Content for All Games page -->
+                <div class="game-display">
+                    <a href="#sycle">
+                        <img id="game-wide" src="images/sycle.jpg">
+                        <div class="learn-more">
+                            <h3>Learn More</h3>
+                        </div>
+                        <div class="project-length">
+                            <p>9 Weeks</p>
+                        </div>
+                        <div class="team-size">
+                            <p>~20</p><img src="images/people-icon.png">
+                        </div>
+                    </a>
+                    <p id="flavor-text">
+                        Sycle is a turn-based strategy roguelite centered around the concept of Sacrifice.
+                        <br><br>
+                        During this project I focused on Gameplay, System and Level design.
+                    </p>
+                    <a class="button" href="#sycle">Read More</a>
+                </div>
+
+                <div class="game-display">
+                    <a href="#wonderwings">
+                        <img id="game-wide" src="images/wonderwings.jpg">
+                        <div class="learn-more">
+                            <h3>Learn More</h3>
+                        </div>
+                        <div class="project-length">
+                            <p>9 Weeks</p>
+                        </div>
+                        <div class="team-size">
+                            <p>12</p><img src="images/people-icon.png">
+                        </div>
+                    </a>
+                    <p id="flavor-text">
+                        Wonder Wings is a 3D flying shooting game.
+                        <br><br>
+                        My main responsibilities were Combat, System, and Level design.
+                    </p>
+                    <a class="button" href="#wonder">Read More</a>
+                </div>
+
+                <div class="game-display">
+                    <a href="#arenashooter">
+                        <img id="game-wide" src="images/Priestcore.png">
+                        <div class="learn-more">
+                            <h3>Learn More</h3>
+                        </div>
+                        <div class="project-length">
+                            <p>6 Weeks</p>
+                        </div>
+                        <div class="team-size">
+                            <p>11</p><img src="images/people-icon.png">
+                        </div>
+                    </a>
+                    <p id="flavor-text">
+                        Priestcore is a fast-paced first person arena shooter.
+                        <br><br>
+                        As the lead designer, I took care of Project Management and every aspect
+                        of its design.
+                    </p>
+                    <a class="button" href="#arenashooter">Read More</a>
+                </div>
+
+                <div class="game-display">
+                    <a href="#nocturnal">
+                        <img id="game-wide" src="images/nocturnal.jpg">
+                        <div class="learn-more">
+                            <h3>Learn More</h3>
+                        </div>
+                        <div class="project-length">
+                            <p>4 Weeks</p>
+                        </div>
+                        <div class="team-size">
+                            <p>11</p><img src="images/people-icon.png">
+                        </div>
+                    </a>
+                    <p id="flavor-text">
+                        Nocturnal is a 2D platformer with a dark setting.
+                        <br><br>
+                        My main responsibilities were Gameplay and Level design.
+                    </p>
+                    <a class="button" href="#nocturnal">Read More</a>
+                </div>
+            </div>
+            <p> </p>
+
+        <!-- <div class="featured-game">
             <img class="background-gradient" src="images/BackgroundGradientSplash.png">
             <h1>Featured Game</h1>
             <div class="featured-showcase">
                 <div class="featured-text">
-                    <p><span class="highlight">Wonder Wings</span> is a 3D<span class="highlight">flying shooting</span>
+                    <p><span class="highlight">Wonder Wings</span> is a 3D <span class="highlight">flying shooting</span>
                         game.
                         The player controls a plushie, with the goal to defeat all of the enemies in the room, mostly
                         toys themselves, without crashing into obstacles.</p>
@@ -81,7 +186,8 @@
                     <img src="images/wonderwings.jpg">
                 </div>
             </div>
-        </div>
+        </div> -->
+
     </section>
 
     <section id="about">
@@ -126,14 +232,14 @@
                         development, amongst which gameplay, level, and system design.
                         <br>
                         <br>
-                        Today, that passion is channelled into my studies and personal projects. I really enjoy the
+                        Today, that passion is channeled into my studies and personal projects. I really enjoy the
                         process of learning and exploring
                         all kinds of new concepts in game design. I am driven not only by my curiosity about all aspects
-                        of game development, but also by
+                        of game development but also by
                         a love for problem-solving that constantly challenges me to grow.
                         My approach to game design involves a hands-on, immersive experience. I spend a significant
                         amount of my time working directly
-                        within the engine, implementing, and programming, always with an eye towards the best user
+                        within the engine, implementing, and programming, always with an eye toward the best user
                         experience.
                         <br><br>
                         Thanks to my computer science background, I specialize in the more programming-adjacent
@@ -149,13 +255,7 @@
                         avoiding confusion, saving time, and elimitating conflicts.
                         Further, I have found that cultivating an environment where making games is fun and exciting for
                         the whole team always shines through to the final product.
-                        <br><br>
-                        Outside of game design, I maintain a balance in life with activities that keep me grounded.
-                        Whether it's rising early for a morning run,
-                        stretching to maintain flexibility, cooking a new recipe, swimming in lakes, or even taking a
-                        cold shower just for the gruelling experience,
-                        each activity shapes me, enhancing my life and reflecting back into my work.
-                        <br><br>
+                        <br><br>               
                         In essence, I am someone who cherishes the process of learning, loves the challenge of
                         problem-solving,
                         and is always excited to bring ideas to life through game design.
@@ -238,9 +338,9 @@
                         </div>
                     </a>
                     <p id="flavor-text">
-                        Priestcore is a fast paced first person arena shooter.
+                        Priestcore is a fast-paced first person arena shooter.
                         <br><br>
-                        As the lead designer I took care of Project Management and every aspect
+                        As the lead designer, I took care of Project Management and every aspect
                         of its design.
                     </p>
                     <a class="button" href="#arenashooter">Read More</a>
@@ -285,7 +385,7 @@
                 <div class="half-section">
                     <h2>Project Summary</h2>
                     <p>
-                        PRIESTCORE is a fast paced first person arena shooter with a cel-shaded aesthetic, set during the Apocalypse.
+                        Priestcore is a fast paced first person arena shooter with a cel-shaded aesthetic, set during the Apocalypse.
                         The player takes the role of Father Gabriel, the priest of Belsit. His role? Defend his cathedral
                         from the incoming waves of demons, exterminate each one of them and survive.
                         <br><br>
@@ -306,7 +406,7 @@
                     <img src="images/PriestcoreCover.png">
                 </div>
             </div>
-            <a class="button" href="https://eventhorizonschool.itch.io/sycle" style="margin: 32px" target="_blank">Download the build!</a>
+            <a class="button" href="https://eventhorizonschool.itch.io/sycle" style="margin: 32px" target="_blank">Download the build</a>
             <a class="button" href="https://eventhorizonschool.itch.io/sycle" style="margin: 32px" target="_blank">Read the GDD</a>
             <hr style="width: 85vw; margin: 64px;">
             <div class="game-section">
@@ -317,80 +417,75 @@
                     and the enemies behaviour.</p>
                 <p><span class="highlight">Level Design:</span> designed the game level, whiteboxed it in engine,
                      and added all the colliders and triggers required.</p>
-                <p><span class="highlight">System Design:</span> balanced the enemies stats and the power-ups scaling. 
-                    Moreover, designed a wave system to spawn enemies, that increases periodically.</p>
+                <!-- <p><span class="highlight">System Design:</span> balanced the enemies stats and the power-ups scaling. 
+                    Moreover, designed a wave system to spawn enemies, that increases periodically.</p> -->
             </div>
             <div class="game-section">
-                <h2>My Contributions</h2>
-                <p>
-                    This six-week project was all about teamwork. We had an ambitions scope and we needed to work
-                    efficiently to get the game
-                    where we wanted it in the few weeks we had.
-                    My role in this venture saw me wearing many hats, each one challenging yet rewarding in its own
-                    unique way.
-                    It was a very stressful experence, but it resulted in a project that I feel proud of.
-                </p>
-                <br>
-                <h4>Game Design</h4>
+                <h2>Game Design</h2>
                 <p>
                     The project began with a blank canvas and the excitement of possibility. I was entrusted with the
-                    responsibility of designing
-                    the game from scratch and writing the Game Design Document (GDD). Though I had final say on our
-                    decisions, the team had a lot of
-                    interesting and exciting ideas for features, mechanics, animations, guns, and more. Everyone had
-                    suggestions and was involved
-                    in shaping the game.
-                    My co-designer Hari (who was unfortunately absent for much of the project)
-                    created most of the rooms used in the level, and I was responsible for the rest of the design work,
-                    like designing and balancing the 37 guns that we have in the game. It was a lot of very intense work
-                    in many different disciplines,
-                    and it
+                    responsibility of designing the game from scratch and writing the Game Design Document (GDD). 
+                    Though I had the final say on our decisions, the team had a lot of interesting and exciting ideas for 
+                    features, mechanics, animations, and more. Everyone had suggestions and was involved in shaping the game.           
                 </p>
-                <h4>Project Management</h4>
+                <br>
+                <h2>Project Management</h2>
                 <p>
                     In the role of project manager, I found myself in the position of a guiding hand, ensuring the team
-                    remained focused and efficient. I was the scrum leader every morning,
-                    and I also handled the task of balancing resources, managing timelines, and coordinating efforts
-                    with humility and respect for each team member's unique contributions.
+                    remained focused and efficient. I was the scrum leader every morning, and I also handled the task of 
+                    balancing resources, managing timelines, and coordinating efforts with respect for each team member's unique contributions.
                 </p>
-                <h4>Gameplay Mechanics and User Interface</h4>
+                <br>
+                <h2>Gameplay Design</h2>
                 <p>
-                    Diving into gameplay mechanics and UI design allowed me to bring some creativity to problem-solving.
-                    I helped devise a functioning door system, contributed to an immersive sound system, and designed an
-                    intuitive HUD,
-                    all of which contributed to the gameplay polish.
+                    In this project we wanted the player to experience the power and tension that comes from playing a fast-paced shooter, 
+                    where they always have to be on the move and obliterate an infinite amount of enemies.
+                    Our gameplay was very inspired by games like Doom and Ultrakill, we wanted enemy variety, but we ended having only
+                    two enemy types for a programming bottleneck as we were developing the game in an almost barebone engine.
+                    These enemies were: a small Imp demon that would chase the player and die with a few projectiles, its strenght being in 
+                    its speed and numbers; and a bigger unit called the Hog, that would shoot the player when they enter its range, but in 
+                    exchange of its attack range and large quantity of health points, it was a rarer and much slower unit.
+                    <br>
+                    Moreover, I designed the movement and shooting mechanic of our player. For the movement, the goal was to make the player feel light on their feet 
+                    while moving around, for that I designed a fast movement speed with a low gravity on the player, and a dash mechanic to dodge 
+                    enemy projectiles or quickly reposition on the map.
+                    <br>
+                    Regarding the shooting, we did not have enough time to develop different guns, so I focused on giving the player an automatic
+                    weapon with flat damage no matter the distance, as they would be fighting infinite waves of enemies, and I felt that was the 
+                    best choice to support the fast-pace feeling of our game and have a good playtime, as the player could continuously shoot enemies from far
+                    away if they kept moving. If they ever stopped they would get drowned by the amount of incoming enemies.     
                 </p>
-                <h4>Testing and Debugging</h4>
+                <br>
+                <h2>Level Design</h2>
                 <p>
-                    Quietly crucial in its role, testing and debugging became an area where I could contribute
-                    significantly to the game's polish.
-                    Spotting and fixing bugs (and there were a lot), ensuring that our final product was as seamless as
-                    possible, was a rewarding,
-                    behind-the-scenes role that I was happy to fill.
-                </p>
-                <h4>Sound Design and Dialogue Writing</h4>
-                <p>
-                    Finally, my explorations in sound design and dialogue writing were quite the adventure. Curating a
-                    collection of sounds and
-                    even writing the voice lines for our shopkeeper NPC felt like another step in giving life to our
-                    game.
-                    Seeing (and hearing!) these elements in the final product was a joyous moment for me.
+                    Before focusing on our game level I expanded the game setting to have a coherent space. Our final setting was very similar to the Castlevania
+                     TV series, basically waves of demons were pillaging the Earth and attacking any people or religious building. The player would play as a 
+                     priest protecting his cathedral and for this reason, the game level resembled a real cathedral. In fact, before working on the actual level,
+                      I researched the architecture of many cathedrals (I was lucky enough to have visited many of them in Italy), the key elements that most if 
+                      not all of them shared, like benches, pillars or the altars, and I also noticed how most of the buildings also shared the same cross shape.
+                      After collecting enough info I and the other designer started working on some level mockups. My goal for the level was to have a large space
+                      around the pillars for the player to run around, and an altar area where our power-ups would spawn.
+                    After completing our mockups, we compared them to see the strong and weak aspects of both, and for the final product we decided to mix our game
+                    levels into one to utilize the strenghts of both. For example, I wanted to add some kind of siderooms in my level as it was very rectangular shaped
+                    and the experience inside it felt kinda monotonous. To solve this, inspired by my colleague´s level, I added into mine a second floor that 
+                    drastically improved the gameplay. After that, I noticed how the enemies could block the entrances to the second floor if there were too many,
+                    so I changed the pathways to reach it, adding a total of five different routes.
+                    Now that I had a level, I needed some kind of obstacles or props to fill the empty space, and knowing that the game was set in an Apocalypse, I 
+                    talked with our artists to break existing assets in our level, making the level feel affected by the changes in the game world. This resulted in
+                    using broken pillars or benches as obstacles.
                 </p>
                 <br>
                 <h2>Conclusion</h2>
                 <p>
-                    All in all, my contributions to the project were wide spanning and focused a lot on both the team
-                    and my individual work.
-                    I ended up having to take a lot of responsibility for the game, stepping in to help wherever we were
+                    All in all, it was a good experience to learn how challenging it can be to work with a new tool such as 
+                    a different Engine. We had to adapt our game to our constraints and look for creative solutions to obtain
+                    good performance and mechanics.
+                    I had the opportunity to be the Project Lead and take a lot of responsibility for the game, stepping in to help wherever we were
                     struggling in the process.
-                    The satisfaction and pride I feel are less about the specific tasks I accomplished, and more about
-                    the successful result of
-                    our teamwork and the rewarding journey we embarked on together.
-                </p>
-                <a class="button clicker" href="dev_diary/GP1.html" target="_blank">Read More!</a>
+                </p>           
             </div>
             <hr style="width: 85vw; margin: 64px;">
-            <img src="images/WTDDLogoTransparent.png" class="team-logo">
+            <img src="images/goofygoobers_logo.png" class="team-logo">
         </div>
     </section>
 
