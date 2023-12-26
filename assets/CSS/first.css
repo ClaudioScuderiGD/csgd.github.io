@@ -9,6 +9,64 @@
     transform: translateY(0px);
  }
 
+ .section {
+    position: relative;
+    padding: 0 20px;
+}
+
+.section > div {
+    padding: 40px 0;
+
+    width: 1100px;
+    max-width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section .text {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.section .text .subsection-title {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.section .text .conclusion-text {
+    padding-top: 40px;
+    clear: both;
+}
+
+.section .title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.section .subtitle {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+ .presentation {
+    margin-top: 60px;
+    background: url(/images/homebg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.presentation > div {
+    width: 800px;
+}
+
+.presentation .title, .presentation .subtitle {
+    text-transform: uppercase;
+}
+
+
 :root {
     --color: #141414;
 }
@@ -50,7 +108,8 @@ h1, h2, h3, a {
 #navbar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    /* justify-content: center; */
     background-color: #1f1f1f80;
     position: fixed;
     top: 0;
@@ -714,6 +773,12 @@ section {
 }
 
 /*--- Allgames Section ---*/
+
+.allgames-home {
+    margin: 0;
+    padding-top: 50px;
+    position: relative;
+}
 
 .allgames-container {
     margin: 0;
