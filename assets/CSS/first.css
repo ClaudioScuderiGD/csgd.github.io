@@ -1,20 +1,20 @@
-.waypoint  {
-   opacity:0;
-   transform: translateY(200px);
-   transition-duration: 1s;
+.waypoint {
+    opacity: 0;
+    transform: translateY(200px);
+    transition-duration: 1s;
 }
 
 .waypoint.visible {
-    opacity:1;
+    opacity: 1;
     transform: translateY(0px);
- }
+}
 
- .section {
+.section {
     position: relative;
     padding: 0 20px;
 }
 
-.section > div {
+.section>div {
     padding: 40px 0;
 
     width: 1100px;
@@ -51,18 +51,19 @@
     font-weight: 900;
 }
 
- .presentation {
+.presentation {
     margin-top: 60px;
     background: url(/images/homebg.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.presentation > div {
+.presentation>div {
     width: 800px;
 }
 
-.presentation .title, .presentation .subtitle {
+.presentation .title,
+.presentation .subtitle {
     text-transform: uppercase;
 }
 
@@ -75,10 +76,11 @@ html {
     scroll-behavior: smooth;
 }
 
-@font-face{
+@font-face {
     font-family: Lato;
     src: url("../fonts/Lato/Lato-Regular.ttf");
 }
+
 @font-face {
     font-family: Nunito;
     src: url("../fonts/Nunito/NunitoSans_7pt-Light.ttf");
@@ -87,10 +89,16 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #2c2c2c; /* #2c2c2c */
+    background-color: #2c2c2c;
+    /* #2c2c2c */
 }
 
-body, input, select, textarea, button, .dropdown .dropbtn {
+body,
+input,
+select,
+textarea,
+button,
+.dropdown .dropbtn {
     color: rgba(255, 255, 255, 0.75);
     font-family: "Lato";
     font-size: 15pt;
@@ -98,9 +106,12 @@ body, input, select, textarea, button, .dropdown .dropbtn {
     line-height: 1.75em;
 }
 
-h1, h2, h3, a {
+h1,
+h2,
+h3,
+a {
     font-family: "Lato";
-    color:white;
+    color: white;
 }
 
 /*--- nav interaction ---*/
@@ -108,8 +119,8 @@ h1, h2, h3, a {
 #navbar {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
     background-color: #1f1f1f80;
     position: fixed;
     top: 0;
@@ -118,8 +129,15 @@ h1, h2, h3, a {
     z-index: 99;
 }
 
+#navbar .navbar-fixer {
+    display: flex;
+}
+
+#navbar .navbar-fixer a {
+    display: inline-block !important;
+}
+
 #navbar a {
-    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 10px;
@@ -140,10 +158,8 @@ h1, h2, h3, a {
 }
 
 .dropdown {
+    display: inline-block;
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 8px;
 }
 
 .dropdown .dropbtn {
@@ -177,6 +193,7 @@ h1, h2, h3, a {
     z-index: 1000;
     pointer-events: none;
     transition: 0.5s;
+    display: inline-block;
 }
 
 .dropdown-content a {
@@ -215,7 +232,9 @@ h1, h2, h3, a {
 
 /* hide regular links and show the icon on screens 1080px or smaller */
 @media screen and (max-width: 1080px) {
-    #navbar a:not(:last-child), .dropdown {
+
+    #navbar a:not(:last-child),
+    .dropdown {
         display: none;
     }
 
@@ -589,6 +608,7 @@ section {
     margin-bottom: 16px !important;
     transition: 0.1s;
 }
+
 .clicker:hover {
     background-color: rgb(225, 225, 225);
     color: rgb(26, 26, 26) !important;
@@ -598,6 +618,7 @@ section {
     border-radius: 16px !important;
     transition: 0.1s;
 }
+
 .clicker:active {
     background-color: rgb(225, 225, 225);
     color: rgb(26, 26, 26) !important;
@@ -626,23 +647,24 @@ section {
     color: white;
     padding: 4px 24px;
     text-align: center;
-    text-decoration: none; /* No underline */
+    text-decoration: none;
+    /* No underline */
     display: inline-block;
     font-size: 0.8em;
     margin: 10px 2px;
     cursor: pointer;
     border-radius: 12px;
     transition: all 0.5s ease;
-  }
-  
-  .collapse-button:hover {
+}
+
+.collapse-button:hover {
     background-color: #ffffff;
     color: #242424;
     text-decoration: underline;
-  }
+}
 
 .games-i-like h3 {
-    color:rgb(18, 218, 191);
+    color: rgb(18, 218, 191);
     font-size: 1.3em;
 }
 
@@ -654,17 +676,20 @@ section {
     .about-canvas {
         max-width: 720px;
     }
+
     .about-header {
         height: 200px;
         border-radius: 100px;
         padding-left: 64px;
     }
+
     .about-text {
         border-radius: 100px;
         padding: 64px;
         margin-top: -112px;
         padding-top: 128px;
     }
+
     .games-i-like {
         border-radius: 100px;
         padding: 64px;
@@ -675,6 +700,7 @@ section {
     .about-canvas h1 {
         font-size: 8vw;
     }
+
     .games-i-like h3 {
         font-size: calc(1em + 0.5vw);
     }
@@ -686,12 +712,14 @@ section {
         height: 100px;
         border-radius: 50px;
     }
+
     .about-text {
         padding: 32px;
         border-radius: 50px;
         margin-top: -32px;
         padding-top: 48px;
     }
+
     .games-i-like {
         padding: 32px;
         border-radius: 50px;
@@ -748,7 +776,7 @@ section {
 }
 
 @media screen and (min-width: 1420px) {
-    .contact-icons img:hover + p {
+    .contact-icons img:hover+p {
         opacity: 100%;
         top: 64px;
         transition: 0.5s;
@@ -759,6 +787,7 @@ section {
     .contact-icons {
         flex-direction: column;
     }
+
     .contact-icons p {
         opacity: 100%;
         left: 72px;
@@ -766,6 +795,7 @@ section {
         position: relative;
     }
 }
+
 @media screen and (max-width: 800px) {
     .flexer {
         align-items: start;
@@ -794,6 +824,7 @@ section {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 64px;
+    align-items: stretch;
 }
 
 .game-display {
@@ -829,7 +860,7 @@ section {
     .game-display .button {
         visibility: visible;
         margin-top: 16px;
-    }  
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -848,13 +879,15 @@ section {
     transition: 0.5s;
 }
 
-.game-display a:hover > #game-wide, .game-display a ~ div:hover > #game-wide {
+.game-display:hover a>#game-wide,
+.game-display:hover a~div>#game-wide {
     transition: 0.5s;
     filter: blur(2px);
     border-color: rgba(0, 0, 0, 0.2)
 }
 
-.game-display .project-length, .game-display .team-size {
+.game-display .project-length,
+.game-display .team-size {
     position: absolute;
     padding: 5px 20px 5px 20px;
     background-color: #444444;
@@ -872,14 +905,16 @@ section {
 .game-display .project-length {
     right: 0px;
     top: 0px;
-    transform: translate(20% , -35%);
+    transform: translate(20%, -35%);
 }
+
 .game-display .team-size {
     left: 0px;
     bottom: 0px;
-    transform: translate(-20% , 10%);
+    transform: translate(-20%, 10%);
 }
-.game-display .team-size img{
+
+.game-display .team-size img {
     height: 24px;
     width: 24px;
 }
@@ -912,7 +947,7 @@ section {
     margin: 0;
 }
 
-.game-display a:hover > .learn-more {
+.game-display:hover a>.learn-more {
     opacity: 100%;
     transition: 0.5s;
     outline-offset: 0;
@@ -938,9 +973,11 @@ section {
     .game-section {
         max-width: 90vw;
     }
+
     .game-section-container {
         flex-direction: column-reverse;
     }
+
     .game-logo {
         max-width: 90%;
     }
@@ -976,6 +1013,7 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 .team-display p {
     position: absolute;
     text-align: center;
@@ -1006,14 +1044,14 @@ a:hover .portfolio-link {
 .portfolio-link {
     width: 64px !important;
     position: absolute;
-    margin:0;
+    margin: 0;
     transition: 0.5s;
     pointer-events: none;
     opacity: 0%;
 }
 
 .team-logo {
-    align-self: center; 
+    align-self: center;
     max-width: 512px !important;
 }
 
@@ -1022,6 +1060,7 @@ a:hover .portfolio-link {
         width: 128px !important;
         height: 128px;
     }
+
     .team-logo {
         width: 80vw !important;
     }
@@ -1068,9 +1107,10 @@ a:hover .portfolio-link {
 }
 
 @media screen and (max-width: 540px) {
-    .syclenarrow img{
+    .syclenarrow img {
         width: 90vw !important;
     }
+
     .button {
         font-size: 5.8vw;
     }
@@ -1079,7 +1119,7 @@ a:hover .portfolio-link {
 .sycle-canvas h1 {
     font-size: 2.5em;
     line-height: 1em;
-    color:white;
+    color: white;
     margin-bottom: 64px;
 }
 
@@ -1175,7 +1215,7 @@ a:hover .portfolio-link {
     gap: 25px;
 }
 
-.wonder-show img{
+.wonder-show img {
     max-width: 400px !important;
     margin-top: 20px;
 }
@@ -1185,7 +1225,8 @@ a:hover .portfolio-link {
         flex-direction: column;
         gap: 0px;
     }
-    .wonder-show img{
+
+    .wonder-show img {
         width: 80% !important;
     }
 }
@@ -1203,7 +1244,8 @@ a:hover .portfolio-link {
     object-fit: cover;
 }
 
-.nocturnal-canvas video, .nocturnal-canvas-img {
+.nocturnal-canvas video,
+.nocturnal-canvas-img {
     max-width: 1280px;
     height: auto;
 }
@@ -1212,6 +1254,7 @@ a:hover .portfolio-link {
     .nocturnal-canvas video {
         max-width: 90vw;
     }
+
     .nocturnal-canvas-img {
         max-width: 90vw;
     }
@@ -1272,21 +1315,23 @@ a:hover .portfolio-link {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: calc(56.25%*0.8); /* 16:9 ratio times size modifier*/
+    padding-bottom: calc(56.25%*0.8);
+    /* 16:9 ratio times size modifier*/
     height: 0;
     overflow: hidden;
-    width: 80%; /* change here for new size*/
+    width: 80%;
+    /* change here for new size*/
     margin: auto;
     margin-top: 48px;
 }
-  
+
 .video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}  
+}
 
 @media screen and (max-width: 1400px) {
     .video-wrapper {
@@ -1317,14 +1362,19 @@ a:hover .portfolio-link {
     .nocturnal-qs {
         width: 80%;
     }
+
     .nocturnal-title {
         width: 90%;
     }
 }
+
 @media screen and (max-width: 400px) {
-    .nocturnal-qs, .nocturnal-title {
+
+    .nocturnal-qs,
+    .nocturnal-title {
         width: 95%;
     }
+
     .nocturnal-title {
         width: 95%;
     }
@@ -1355,8 +1405,9 @@ a:hover .portfolio-link {
 
 @media screen and (max-width: 640px) {
     .cv-doc {
-       max-width: 95%; 
+        max-width: 95%;
     }
+
     .enlarge-button {
         display: none;
     }
